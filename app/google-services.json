@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "676508359108",
+    "firebase_url": "https://foodie-259106.firebaseio.com",
+    "project_id": "foodie-259106",
+    "storage_bucket": "foodie-259106.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676508359108:android:465db1f9624b721bb9ac91",
+        "android_client_info": {
+          "package_name": "com.valle.deliveryboyfoodieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676508359108-4n2b80fqhk8v9rek8b048ho370l61e9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUZEsIy37H90hzRzxFyA3DinxtNDTbwfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676508359108-4n2b80fqhk8v9rek8b048ho370l61e9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676508359108:android:5930e73d4b3b862cb9ac91",
+        "android_client_info": {
+          "package_name": "com.valle.foodieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676508359108-4n2b80fqhk8v9rek8b048ho370l61e9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUZEsIy37H90hzRzxFyA3DinxtNDTbwfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676508359108-4n2b80fqhk8v9rek8b048ho370l61e9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

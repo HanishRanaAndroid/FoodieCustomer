@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="@dimen/fivedp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/menu"
+            android:layout_marginLeft="@dimen/tendp"
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/dim25dp"
+            android:layout_height="@dimen/dim25dp"
+            android:layout_margin="@dimen/fivedp"
+            android:gravity="right"
+            android:rotation="90"
+            android:src="@drawable/right_arrow_icon"
+            android:tint="@color/foodie_color" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMenuList"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@+id/llll"
+        android:layout_margin="@dimen/tendp" />
+
+</RelativeLayout>

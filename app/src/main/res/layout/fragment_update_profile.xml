@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flMainUpdate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creme_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim250dp"
+            android:background="@color/foodie_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/edit_profile_back_color" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twentydp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/flUpdateImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <com.valle.foodieapp.utils.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/ivProfilePic"
+                        android:layout_width="@dimen/dim100dp"
+                        android:layout_height="@dimen/dim100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dim2dp"
+                        android:src="@drawable/upload_image"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/user_edit_camera" />
+                </FrameLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/tendp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteensp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentyfivedp"
+                android:layout_marginRight="@dimen/twentyfivedp"
+                android:layout_marginBottom="@dimen/fiftydp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/tendp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirtydp"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:text="@string/user_name"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/dim14sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirtydp"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:layout_marginRight="@dimen/thirtydp"
+                    android:background="@drawable/rectangular_with_black_borger"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/thirtydp"
+                        android:layout_height="@dimen/thirtydp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/user" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortydp"
+                        android:layout_marginLeft="@dimen/tendp"
+                        android:background="@null"
+                        android:shadowColor="@color/shadow_color"
+                        android:text=""
+                        android:textColor="@color/light_black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/dim14sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirtydp"
+                    android:layout_marginTop="@dimen/twentydp"
+                    android:text="@string/email_id"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/dim14sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirtydp"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:layout_marginRight="@dimen/thirtydp"
+                    android:background="@drawable/rectangular_with_black_borger"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/thirtydp"
+                        android:layout_height="@dimen/thirtydp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mail" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortydp"
+                        android:layout_marginLeft="@dimen/tendp"
+                        android:background="@null"
+                        android:shadowColor="@color/shadow_color"
+                        android:text=""
+                        android:textColor="@color/light_black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/dim14sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirtydp"
+                    android:layout_marginTop="@dimen/twentydp"
+                    android:text="@string/mobile_numbr"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/dim14sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirtydp"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:layout_marginRight="@dimen/thirtydp"
+                    android:background="@drawable/rectangular_with_black_borger"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/thirtydp"
+                        android:layout_height="@dimen/thirtydp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/phone_number" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortydp"
+                        android:layout_marginLeft="@dimen/tendp"
+                        android:background="@null"
+                        android:shadowColor="@color/shadow_color"
+                        android:text=""
+                        android:textColor="@color/light_black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/dim14sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUpdateProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/signup_button"
+                    android:layout_marginLeft="@dimen/thirtydp"
+                    android:layout_marginTop="@dimen/twentydp"
+                    android:layout_marginRight="@dimen/thirtydp"
+                    android:layout_marginBottom="@dimen/twentydp"
+                    android:background="@drawable/btn_red_back"
+                    android:gravity="center"
+                    android:padding="@dimen/tendp"
+                    android:text="@string/update_profile"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim14sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</FrameLayout>

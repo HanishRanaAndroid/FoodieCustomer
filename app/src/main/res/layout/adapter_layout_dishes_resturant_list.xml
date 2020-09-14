@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/tendp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.valle.foodieapp.utils.RoundRectCornerImageView
+                    android:id="@+id/ivItemImage"
+                    android:layout_width="@dimen/dim120dp"
+                    android:layout_height="@dimen/dim80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/as" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fivedp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fivedp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/dim12sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/dim12sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/tensp"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAddItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center|right"
+                    android:background="@drawable/btn_red_back"
+                    android:gravity="center|right"
+                    android:paddingLeft="@dimen/fifteendp"
+                    android:paddingTop="@dimen/fivedp"
+                    android:paddingRight="@dimen/fifteendp"
+                    android:paddingBottom="@dimen/fivedp"
+                    android:text="@string/add"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tensp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOutOfStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:paddingLeft="@dimen/fifteendp"
+                    android:paddingTop="@dimen/fivedp"
+                    android:paddingRight="@dimen/fifteendp"
+                    android:paddingBottom="@dimen/fivedp"
+                    android:text="Out of stock"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/dim12sp"
+                    android:visibility="gone" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

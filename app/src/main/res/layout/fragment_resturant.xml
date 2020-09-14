@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlMainRestaurant"
+    android:background="@color/white"
+    tools:context=".fragment.ResturantFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/fmLayout"
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivRestCoverImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/demo" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/most_light_white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRestDiscountPercentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/twentydp"
+                    android:gravity="right"
+                    android:text="20% OFF"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/twenty_sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/bottomLayout">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvRestName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="@dimen/tendp"
+                            android:text="Delicious food!!"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/eighteensp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvOrderTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="@dimen/tendp"
+                            android:gravity="right"
+                            android:text="30mins"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dim14sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/bottomLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvRestRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="@dimen/tendp"
+                            android:text="★4.0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dim14sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="right|center"
+                            android:layout_margin="@dimen/tendp"
+                            android:gravity="right"
+                            android:text="@string/delivery_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dim14sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPercentageOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fmLayout"
+                android:padding="@dimen/tendp"
+                android:text="Flat 2% off on all Orders"
+                android:textColor="@color/foodie_color"
+                android:textSize="@dimen/dim14sp" />
+
+            <RelativeLayout
+                android:id="@+id/menuLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPercentageOff"
+                android:orientation="horizontal"
+                android:padding="@dimen/tendp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/featured_products"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border_back"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/twentydp"
+                        android:layout_height="@dimen/twentydp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/tendp"
+                        android:src="@drawable/menu" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:paddingTop="@dimen/fivedp"
+                        android:paddingRight="@dimen/fifteendp"
+                        android:paddingBottom="@dimen/fivedp"
+                        android:text="@string/menu"
+                        android:textColor="@color/foodie_color"
+                        android:textSize="@dimen/dim12sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvResturantItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menuLayout"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/tendp" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

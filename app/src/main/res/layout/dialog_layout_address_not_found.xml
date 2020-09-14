@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/foodie_color"
+        android:gravity="center"
+        android:padding="@dimen/tendp"
+        android:text="@string/add_address"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim80dp"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:background="@drawable/rectang_with_black_border_no_radius"
+        android:gravity="start"
+        android:hint="@string/address"
+        android:padding="@dimen/tendp"
+        android:shadowColor="@color/shadow_color"
+        android:textColor="@color/light_black"
+        android:textColorHint="@color/light_black"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/dim14sp" />
+    <!--BARRIO-->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:background="@drawable/rectang_with_black_border_no_radius"
+        android:gravity="start"
+        android:hint="@string/neighbor"
+        android:padding="@dimen/tendp"
+        android:shadowColor="@color/shadow_color"
+        android:textColor="@color/light_black"
+        android:textColorHint="@color/light_black"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/dim14sp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etLandmark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:background="@drawable/rectang_with_black_border_no_radius"
+        android:gravity="start"
+        android:hint="@string/landmark"
+        android:padding="@dimen/tendp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:shadowColor="@color/shadow_color"
+        android:textColor="@color/light_black"
+        android:textColorHint="@color/light_black"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/dim14sp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAsHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/border_back"
+            android:gravity="right"
+            android:paddingLeft="@dimen/twentydp"
+            android:paddingTop="@dimen/tendp"
+            android:paddingRight="@dimen/twentydp"
+            android:paddingBottom="@dimen/tendp"
+            android:text="@string/home_add"
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/dim12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAsWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/fifteendp"
+            android:background="@drawable/border_back"
+            android:gravity="right"
+            android:paddingLeft="@dimen/twentydp"
+            android:paddingTop="@dimen/tendp"
+            android:paddingRight="@dimen/twentydp"
+            android:paddingBottom="@dimen/tendp"
+            android:text="@string/work"
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/dim12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAsOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/border_back"
+            android:gravity="right"
+            android:paddingLeft="@dimen/twentydp"
+            android:paddingTop="@dimen/tendp"
+            android:paddingRight="@dimen/twentydp"
+            android:paddingBottom="@dimen/tendp"
+            android:text="@string/other"
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/dim12sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSubmitAddress"
+        android:layout_width="@dimen/dim150dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:background="@color/foodie_color"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+</LinearLayout>

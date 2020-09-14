@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.OTPVerificationActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/dim150dp"
+        android:layout_height="@dimen/dim120dp"
+        android:src="@mipmap/logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/tendp"
+        android:layout_marginLeft="@dimen/tendp"
+        android:text="@string/verification_code_send_to_your_mobile_number"
+        android:textColor="@color/foodie_color"
+        android:textSize="@dimen/dim12sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tendp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="@dimen/dim14sp" />
+
+    <com.valle.foodieapp.utils.OtpEditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim100dp"
+        android:layout_marginTop="@dimen/tendp"
+        android:layout_marginRight="@dimen/dim100dp"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/dim14sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_receive_the_code"
+            android:textSize="@dimen/dim12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvResendOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resend"
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/dim12sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvVerifyOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:layout_marginRight="@dimen/thirtydp"
+        android:background="@drawable/btn_red_back"
+        android:gravity="center"
+        android:padding="@dimen/tendp"
+        android:text="@string/verify_otp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim14sp"
+        android:textStyle="bold" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/twentydp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+
+        <com.valle.foodieapp.utils.RoundRectCornerImageView
+            android:id="@+id/ivImage"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/demo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="20% OFF"
+            android:textColor="@color/white"
+            android:textSize="@dimen/thirty_sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/fivedp"
+            android:background="@drawable/rating_back"
+            android:gravity="right"
+            android:paddingLeft="@dimen/tendp"
+            android:paddingTop="@dimen/fivedp"
+            android:paddingRight="@dimen/tendp"
+            android:paddingBottom="@dimen/fivedp"
+            android:text="3.5"
+            android:textSize="@dimen/tensp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fivedp"
+            android:gravity="start"
+            android:text="LION CAFE"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chinese,Italian,North Indian...."
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRestaurantLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/tendp"
+    android:orientation="horizontal">
+
+    <com.valle.foodieapp.utils.RoundRectCornerImageView
+        android:id="@+id/ivRestImage"
+        android:layout_width="@dimen/dim120dp"
+        android:layout_height="@dimen/dim100dp"
+        android:layout_marginLeft="@dimen/tendp"
+        android:src="@drawable/as"
+        android:scaleType="fitXY" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tendp"
+        android:layout_marginRight="@dimen/tendp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRestname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteendp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRestRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rating_back"
+                android:paddingLeft="@dimen/tendp"
+                android:paddingTop="@dimen/fivedp"
+                android:paddingRight="@dimen/tendp"
+                android:paddingBottom="@dimen/fivedp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/tensp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRestCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fivedp"
+            android:text=""
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRestPromoCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tendp"
+            android:text=""
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/dim12sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

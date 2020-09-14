@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvPleaseWait"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tendp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPleaseWait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llBottomLayout"
+        android:gravity="center"
+        android:padding="@dimen/fivedp"
+        android:text="Please wait..."
+        android:textSize="@dimen/dim12sp"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/shadow_color"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSelectAttachement"
+            android:layout_width="@dimen/twentyfivedp"
+            android:layout_height="@dimen/twentyfivedp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/tendp"
+            android:src="@drawable/attachement"
+            android:tint="@color/foodie_color"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/fivedp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_background"
+            android:hint="@string/type_message"
+            android:padding="@dimen/tendp"
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/tvSendMessage"
+            android:layout_width="@dimen/fortydp"
+            android:layout_height="@dimen/thirtydp"
+            android:layout_gravity="center"
+            android:src="@drawable/sendmessage"
+            android:tint="@color/foodie_color" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

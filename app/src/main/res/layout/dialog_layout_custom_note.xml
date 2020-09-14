@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/tendp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortydp"
+        android:background="@color/foodie_color"
+        android:gravity="center"
+        android:text="@string/add_custome_notes"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etCustomNote"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim100dp"
+        android:layout_margin="@dimen/tendp"
+        android:background="@drawable/border_back"
+        android:gravity="start"
+        android:textSize="@dimen/dim14sp"
+        android:hint="@string/enter_note"
+        android:padding="@dimen/tendp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubmitNote"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortydp"
+        android:background="@drawable/address_selected"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dim100dp"
+        android:paddingRight="@dimen/dim100dp"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sixteensp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llOrderMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/tendp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.valle.foodieapp.utils.RoundRectCornerImageView
+            android:id="@+id/ivRestaurantImage"
+            android:layout_width="@dimen/dim120dp"
+            android:layout_height="@dimen/dim80dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/as"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlProgressDialog"
+            android:layout_width="@dimen/dim120dp"
+            android:layout_height="@dimen/dim80dp"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="@dimen/dim60"
+                android:layout_height="@dimen/dim60"
+                android:scaleType="fitXY"
+                android:src="@drawable/as" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fivedp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/fivedp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRestaurantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KFC"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/sixteensp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivFavourite"
+                    android:layout_width="@dimen/twentydp"
+                    android:layout_height="@dimen/twentydp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/un_favourite"
+                    android:tint="@color/foodie_color" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRestaurantAdddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fivedp"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/dim14sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fivedp"
+        android:text="@string/order_number"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/sixteensp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/fivedp"
+        android:paddingRight="@dimen/tendp"
+        android:text=""
+        android:textSize="@dimen/dim14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp"
+        android:padding="@dimen/fivedp"
+        android:text="@string/ordered_items"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/sixteensp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llOrderedItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fivedp"
+        android:orientation="vertical" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp"
+        android:padding="@dimen/fivedp"
+        android:text="@string/delivery_address"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/sixteensp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDeliveryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/fivedp"
+        android:paddingRight="@dimen/tendp"
+        android:text="Sector 43,California,USA"
+        android:textSize="@dimen/dim14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp"
+        android:padding="@dimen/fivedp"
+        android:text="@string/order_on"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/sixteensp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDeliveryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/fivedp"
+        android:paddingRight="@dimen/tendp"
+        android:text="September 05, 2019 at 11:30 PM"
+        android:textSize="@dimen/dim14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp"
+        android:padding="@dimen/fivedp"
+        android:text="@string/total"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/sixteensp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDeliveryTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/fivedp"
+        android:paddingRight="@dimen/tendp"
+        android:text="$99"
+        android:textSize="@dimen/dim14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTrackOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:padding="@dimen/tendp"
+        android:text="@string/track_order"
+        android:textColor="@color/green"
+        android:textSize="@dimen/dim14sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlItemDelivered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlRateOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tendp"
+                android:text="@string/delivered"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/sixteensp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRateOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/fivedp"
+                android:gravity="right"
+                android:paddingLeft="@dimen/tendp"
+                android:paddingTop="@dimen/fivedp"
+                android:paddingRight="@dimen/tendp"
+                android:paddingBottom="@dimen/fivedp"
+                android:text="@string/rate_order"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAlreadyRated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tendp"
+                android:text="@string/delivered_and_rated"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/sixteensp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrderRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/fivedp"
+                android:background="@drawable/rating_back"
+                android:gravity="right"
+                android:paddingLeft="@dimen/tendp"
+                android:paddingTop="@dimen/fivedp"
+                android:paddingRight="@dimen/tendp"
+                android:paddingBottom="@dimen/fivedp"
+                android:text="3.5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tensp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderCancelled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="@dimen/tendp"
+        android:text="@string/order_cancelled"
+        android:textColor="@color/foodie_color"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1dp"
+        android:layout_marginBottom="@dimen/fivedp"
+        android:background="@color/light_black" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/llMainItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_accent_color_border"
+            android:padding="@dimen/fivedp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/fivedp">
+
+                <LinearLayout
+                    android:id="@+id/llUpper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.valle.foodieapp.utils.RoundRectCornerImageView
+                        android:id="@+id/ivItemImage"
+                        android:layout_width="140dp"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/as" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:gravity="start"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dim12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:text=""
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/dim14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:text=""
+                        android:textSize="@dimen/dim12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llUpper"
+                    android:layout_marginTop="@dimen/fivedp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAddDish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:background="@drawable/btn_red_back"
+                        android:gravity="start"
+                        android:paddingLeft="@dimen/fifteendp"
+                        android:paddingTop="@dimen/fivedp"
+                        android:paddingRight="@dimen/fifteendp"
+                        android:paddingBottom="@dimen/fivedp"
+                        android:text="@string/add"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tensp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvOutOfStock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/fifteendp"
+                        android:paddingTop="@dimen/fivedp"
+                        android:paddingRight="@dimen/fifteendp"
+                        android:paddingBottom="@dimen/fivedp"
+                        android:text="@string/out_of_stock"
+                        android:textColor="@color/foodie_color"
+                        android:textSize="@dimen/dim12sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

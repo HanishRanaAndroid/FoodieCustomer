@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/tendp"
+    tools:context=".fragment.HelpAndSupportFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tendp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:gravity="center"
+        android:text="Servicio de asistencia"
+        android:textColor="@color/foodie_color"
+        android:textSize="@dimen/dimen_18sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tendp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:text="#Order Number: 3651812313234"
+        android:textSize="@dimen/dim14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:text="Ingrese su consulta"
+        android:textColor="@color/foodie_color"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etComplaintQuery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim150dp"
+        android:layout_margin="@dimen/tendp"
+        android:background="@drawable/rectangular_with_black_borger"
+        android:gravity="start"
+        android:hint="Escribe tu consulta aquí..."
+        android:padding="@dimen/tendp"
+        android:textSize="@dimen/dim14sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSubmitComplaint"
+        android:layout_width="@dimen/dim200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twentydp"
+        android:background="@color/foodie_color"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

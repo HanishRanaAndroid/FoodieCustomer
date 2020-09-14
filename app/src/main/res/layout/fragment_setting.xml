@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/tendp"
+    android:background="@color/white"
+    tools:context=".fragment.SettingFragment">
+
+    <RelativeLayout
+        android:id="@+id/rlEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tendp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="@dimen/twentydp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1dp"
+        android:background="@color/light_black" />
+
+    <RelativeLayout
+        android:id="@+id/rlChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tendp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="@dimen/twentydp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1dp"
+        android:background="@color/light_black" />
+
+    <RelativeLayout
+        android:id="@+id/rlNotificationSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tendp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notification_setting"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="@dimen/twentydp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1dp"
+        android:background="@color/light_black" />
+
+    <RelativeLayout
+        android:id="@+id/rlPrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tendp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="@dimen/twentydp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1dp"
+        android:background="@color/light_black" />
+
+    <RelativeLayout
+        android:id="@+id/rlTermAndCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tendp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_and_conditions"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="@dimen/twentydp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1dp"
+        android:background="@color/light_black" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/tendp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="@dimen/twentyfivedp"
+            android:layout_height="@dimen/twentyfivedp"
+            android:src="@drawable/logout" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tendp"
+            android:text="@string/logout"
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/dim14sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1dp"
+        android:background="@color/light_black" />
+</androidx.appcompat.widget.LinearLayoutCompat>

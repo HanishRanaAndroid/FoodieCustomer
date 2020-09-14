@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llYourMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivYouIcon"
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="@dimen/twentydp"
+            android:layout_marginLeft="@dimen/fivedp"
+            android:src="@drawable/circular_user" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvYourMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim2dp"
+            android:background="@drawable/edit_background"
+            android:padding="@dimen/tendp"
+            android:text="Hello, How are you?"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim14sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/tendp"
+        android:layout_marginBottom="@dimen/tendp"
+        android:background="@color/light_white"
+        android:padding="@dimen/tendp"
+        android:text="March 25,2019, 4:20 PM"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/dim14sp"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMeMesaage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/fivedp"
+        android:background="@drawable/btn_red_back"
+        android:padding="@dimen/tendp"
+        android:text="Hii..I am fine, What about you?"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim14sp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

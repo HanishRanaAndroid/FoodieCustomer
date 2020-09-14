@@ -1,0 +1,376 @@
+<resources>
+    <string name="app_name">Valle Food</string>
+    <string name="email">Email</string>
+    <string name="phone">Número de teléfono</string>
+    <string name="name">Nombre</string>
+    <string name="password">Contraseña</string>
+    <string name="conf_password">Confirmar contraseña</string>
+    <string name="Terms_conditions">Término &amp; condición</string>
+    <string name="forgot_pass">Contraseña olvidada?</string>
+    <string name="dont_have_account">No tengo una cuenta?</string>
+    <string name="social">Conectar con redes sociales</string>
+    <string name="already_account">¿Ya tienes una cuenta? Registrarse</string>
+    <string name="skip">Omitir</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alert">Alerta</string>
+    <string name="r_u_sure_u_want_to_exit">¿Estás seguro? quieres salir.</string>
+    <string name="home">Inicio</string>
+    <string name="orders">Pedidos</string>
+    <string name="account">Cuenta</string>
+    <string name="verification_code_send_to_your_mobile_number">Estamos enviando un mensaje de texto con un codigo de verificacion a tu numero de telefono, cuando lo recibas digitalo y presiona verificar. Este proceso puede tardar hasta 3 minutos.</string>
+    <string name="verify_otp">VERIFICAR OTP</string>
+    <string name="don_t_receive_the_code">¿No recibes el código?</string>
+    <string name="resend">ENVIAR OTRO CODIGO</string>
+    <string name="style_json">[
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#212121"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#212121"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#181818"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1b1b1b"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#2c2c2c"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8a8a8a"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#373737"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#3c3c3c"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#4e4e4e"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#3d3d3d"
+      }
+    ]
+  }
+]</string>
+    <string name="menu">MENÚ</string>
+    <string name="add">+AÑADIR</string>
+    <string name="address">Escribe tu direccion:</string>
+    <string name="house">Casa / Piso No.</string>
+    <string name="landmark">Barrio:</string>
+    <string name="work">Trabajo</string>
+    <string name="other">Otra</string>
+    <string name="search">Buscar</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="sign_in">Ingresa si ya tienes cuenta</string>
+    <string name="sign_up">Regístra tus datos si no tienes cuenta</string>
+    <string name="welcome_to_foodie">Bienvenido a Valle Food</string>
+    <string name="discover_new_dishes_everyday_and_hold_your_favourite_restaurant">Descubre nuevos sabores todos los días y disfruta tu restaurante favorito.</string>
+    <string name="add_address">AÑADIR DIRECCIÓN</string>
+    <string name="select_address">SELECCIONE DIRECCION</string>
+    <string name="add_custome_notes">Añadir una nota a tu pedido</string>
+    <string name="have_any_promocode">¿Tienes algún código promocional?</string>
+    <string name="details">DETALLES</string>
+    <string name="help">AYUDA</string>
+    <string name="notification_setting">Notificación de configuración</string>
+    <string name="wishlist">Favoritos</string>
+    <string name="facebook_app_id">483516435600459</string>
+    <string name="fb_login_protocol_scheme">fb483516435600459</string>
+    <string name="we_have_received_your_order">Hemos recibido su pedido</string>
+    <string name="order_confirmed">orden confirmada</string>
+    <string name="your_order_has_been_confirmed">Su pedido ha sido confirmado</string>
+    <string name="order_processed">Orden procesada</string>
+    <string name="your_order_getting_cooked">Tu pedido se está cocinando</string>
+    <string name="order_pickedup">Recogida de pedidos</string>
+    <string name="your_order_is_on_its_way">Su pedido está en camino</string>
+    <string name="chat">CHARLA</string>
+    <string name="send">Enviar</string>
+    <string name="type_message">Escribir mensaje</string>
+    <string name="plz_enter_phone_number">Por favor ingrese el número de teléfono</string>
+    <string name="plz_enter_your_email">Por favor introduzca su correo electrónico</string>
+    <string name="plz_enter_conf_password">Por favor ingrese confirmar contraseña</string>
+    <string name="password_not_matched">Contraseña no coincidente</string>
+    <string name="please_enter_your_old_password">Por favor ingrese su contraseña anterior</string>
+    <string name="please_enter_new_password">Por favor ingrese una nueva contraseña</string>
+    <string name="please_enter_conf_password">Por favor ingrese confirmar contraseña</string>
+    <string name="something_went_wrong">Algo salió mal. Inténtalo de nuevo.</string>
+    <string name="updated_successfully">Actualizado con éxito</string>
+    <string name="no_order_found">No se encontró orden</string>
+    <string name="view_cart">Ver carrito</string>
+    <string name="order_now">Ordenar ahora</string>
+    <string name="are_you_sure_to_exit_app">¿Quieres salir de la aplicación?</string>
+    <string name="exit">Salida!</string>
+    <string name="yes">si</string>
+    <string name="no">No</string>
+    <string name="plus_taxes">más impuestos</string>
+    <string name="item">ARTICULO</string>
+    <string name="perm_ness">Permiso necesario</string>
+    <string name="location_perm_req">El permiso de ubicación es necesario</string>
+    <string name="ok">Entendido</string>
+    <string name="plz_enter_your_number">Por favor ingrese su número</string>
+    <string name="plz_enter_your_password">Por favor, introduzca su contraseña</string>
+    <string name="plz_enter_otp">Por favor, introduzca OTP</string>
+    <string name="plz_enter_valid_code">Por favor ingrese un código válido</string>
+    <string name="plz_allow_loc_per">Por favor permita su ubicación</string>
+    <string name="plz_allow_for_best_results">Por favor permita su permiso de ubicación. para que podamos brindarle los mejores resultados</string>
+    <string name="flat">PLANA</string>
+    <string name="use_code">% CÓDIGO DE USO:</string>
+    <string name="off">% APAGADA</string>
+    <string name="off_use_code">% APAGADA- usar código</string>
+    <string name="item_added_to_cart_plz_check">Artículos agregados a su carrito. por favor, compruebe</string>
+    <string name="plz_enter_your_address">Por favor ingrese su dirección</string>
+    <string name="plz_enter_house_flat_no">Por favor ingrese Casa / Piso No.</string>
+    <string name="plz_enter_landmark">Por favor, introduzca Landmark</string>
+    <string name="plz_choose_adddress_type">Por favor, elija el tipo de dirección</string>
+    <string name="plz_add_delivery_address">Por favor, agregue la dirección de entrega</string>
+    <string name="plz_write_your_note">Por favor escribe tu nota</string>
+    <string name="note">Nota:</string>
+    <string name="plz_entr_promo">Por favor ingrese el código de promoción</string>
+    <string name="to_pay">Total a cancelar     $</string>
+    <string name="plz_enter_valid_copon_code">Por favor ingrese un código de cupón válido</string>
+    <string name="added_succesfully">Agregado exitosamente</string>
+    <string name="plz_wait_assigning_delivery_boy">Por favor espere … estamos asignando repartidor</string>
+    <string name="delivery_boy">Muchacho de entrega</string>
+    <string name="delivery_location">Lugar de entrega</string>
+    <string name="order_amount">Valor total del pedido: $</string>
+    <string name="oops_something_went_wrong">Uy..algo salió mal</string>
+    <string name="thanks_for_rating">Gracias por calificar</string>
+    <string name="item_added">Artículo agregado</string>
+    <string name="cart_alert">Solo puedes pedir artículos de un menú a la vez</string>
+    <string name="cart_alert_message">Borre su carrito si aún desea ordenar estos artículos</string>
+    <string name="clear_cart_nd_add">BORRAR CARRO Y AGREGAR</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="logout">Cerrar sesión!</string>
+    <string name="r_u_sure">Estás seguro?</string>
+    <string name="plz_entr_name">Por favor ingrese el nombre</string>
+    <string name="plz_entr_email">Por favor ingrese su correo electrónico</string>
+    <string name="plz_entr_mob_number">Por favor, introduzca el número de móvil</string>
+    <string name="forget_password">CONTRASEÑA OLVIDADA</string>
+    <string name="submit">Enviar</string>
+    <string name="reset_your_password">Restablecer su contraseña</string>
+    <string name="repeat_order">Repite la orden</string>
+    <string name="ordered_items">Artículos pedidos</string>
+    <string name="delivery_address">Dirección de entrega</string>
+    <string name="order_on">Fecha y hora</string>
+    <string name="total">Total</string>
+    <string name="delivered">Entregada</string>
+    <string name="rate_order">Orden de tarifa</string>
+    <string name="delivered_and_rated">Entregado y calificado</string>
+    <string name="order_cancelled">Orden cancelada</string>
+    <string name="track_order">Seguimiento de orden-></string>
+    <string name="top_rated">LOS MÁS VALORADOS</string>
+    <string name="enter_note">Introducir nota</string>
+    <string name="receive_notification">Recibir notificaciones</string>
+    <string name="apply_promocode">Aplicar código promocional</string>
+    <string name="enter_promo_code">Introduce el código de promoción</string>
+    <string name="item_total">Valor articulo</string>
+    <string name="delivery_fees">Valor del domicilio</string>
+    <string name="service_tax">Tarifa del servicio</string>
+    <string name="discount">Descuento</string>
+    <string name="remove">Eliminar -</string>
+    <string name="proceed_to_payment">PROCEDER AL PAGO</string>
+    <string name="old_password">Contraseña anterior</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="save_delivery_location">Guardar ubicación de entrega</string>
+    <string name="location_please_select_location_from_the_map">Ubicación (Seleccione la ubicación del mapa)</string>
+    <string name="save">Guardar</string>
+    <string name="mobile_number">Número de teléfono móvil</string>
+    <string name="location">Ubicación</string>
+    <string name="contact_support">Soporte de contacto</string>
+    <string name="chat_with_delivery_boy">Chatea con repartidor</string>
+    <string name="chat_with_restaurant">Chat con restaurante</string>
+    <string name="order_placed">Pedido realizado</string>
+    <string name="you_can_check_status_of_your_order_into_order_history">Puede verificar el estado de su pedido en el historial de pedidos</string>
+    <string name="pay_on_delivery">Paga contra entrega</string>
+    <string name="by_cash">En efectivo</string>
+    <string name="pay_online">PAGA EN LINEA</string>
+    <string name="pay">Pagar</string>
+    <string name="feedback">Comentario</string>
+    <string name="rate_your_meal_from">Califica tu pedido de</string>
+    <string name="write_here">Escriba aquí..</string>
+    <string name="your_words_makes_valle_food_a_better_place_you_are_the_influence">Tus palabras hacen de Valle Food un lugar mejor donde tú eres la influencia!</string>
+    <string name="delivery_time">Tiempo promedio de entrega</string>
+    <string name="featured_products">PRODUCTOS DESTACADOS</string>
+    <string name="change_password">Cambia la contraseña</string>
+    <string name="privacy_policy">Política de privacidad</string>
+    <string name="terms_and_conditions">Términos y Condiciones</string>
+    <string name="user_name">Nombre de usuario</string>
+    <string name="email_id">Identificación de correo</string>
+    <string name="mobile_numbr">Número de teléfono móvil</string>
+    <string name="update_profile">Actualización del perfil</string>
+    <string name="sorry_we_don_t_have_any_restaurant_in_your_area">Lo sentimos, no tenemos ningún restaurante en su área.</string>
+    <string name="transaction_failed">Transacción fallida</string>
+    <string name="grand_total">Total a cancelar:</string>
+    <string name="retry_to_pay">Vuelva a intentar pagar</string>
+    <string name="you_cant_go_back">No puedes volver</string>
+    <string name="internet_error">Error de conexión a internet!</string>
+    <string name="restry">PROCESAR DE NUEVO</string>
+    <string name="trans_fess">Tlos cargos de las tarifas de ransacción son $</string>
+    <string name="plz_chose_payment_type">Por favor elija su tipo de pago</string>
+    <string name="out_of_stock">Agotado</string>wishlist
+    <string name="order_number">Número de orden</string>
+    <string name="wishlist_not_found">Lista de deseos no encontrada</string>
+    <string name="home_add">Casa</string>
+    <string name="plz_enter_your_name">por favor, escriba su nombre</string>
+    <string name="no_query_found">No Query Found</string>
+    <string name="city">ciudad</string>
+    <string name="recomended">Recomendada</string>
+    <string name="chaneel_id">com.valle.foodieapp</string>
+    <string name="neighbor">Barrio</string>
+</resources>

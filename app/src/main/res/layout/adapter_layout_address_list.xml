@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAddressType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/twentydp"
+        android:text="Home"
+        android:textColor="@color/foodie_color"
+        android:textSize="@dimen/eighteensp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tendp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/twentydp"
+        android:paddingTop="@dimen/tendp"
+        android:paddingRight="@dimen/twentydp"
+        android:paddingBottom="@dimen/tendp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="27 Colmore Row Birmingham England B3 2EW" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSelect"
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="@dimen/twentydp"
+            android:src="@drawable/select" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

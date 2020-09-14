@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMainPayment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/tendp"
+    tools:context=".fragment.PaymentScreenFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrderAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tendp"
+                android:text="Order Amount: $152"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tvSContinueToPlaceOrder"
+                android:layout_below="@+id/tvOrderAmount"
+                android:layout_margin="@dimen/tendp"
+                android:orientation="vertical"
+                android:padding="@dimen/tendp">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_on_delivery"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/dim14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlCashOnDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:background="@color/white"
+                    android:padding="@dimen/tendp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/thirtydp"
+                            android:layout_height="@dimen/thirtydp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bycash" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/tendp"
+                            android:text="@string/by_cash"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dim14sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivCash"
+                        android:layout_width="@dimen/thirtydp"
+                        android:layout_height="@dimen/thirtydp"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tick_selected"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCashGrandTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Grand Total: $65000" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twentydp"
+                    android:text="@string/pay_online"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/dim14sp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rlOnline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:background="@color/white"
+                    android:padding="@dimen/tendp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dim100dp"
+                            android:layout_height="@dimen/thirtydp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/wompi_icon" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/tendp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dim14sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivOnline"
+                        android:layout_width="@dimen/thirtydp"
+                        android:layout_height="@dimen/thirtydp"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tick_selected"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note"
+                        android:textColor="@color/foodie_color"
+                        android:textSize="@dimen/dim14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTransactionFeesCharges"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Transaction fees charges $12500" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvWompiGrandTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Grand Total: $65000"
+                    android:visibility="gone" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSContinueToPlaceOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/fortydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:layout_marginRight="@dimen/fortydp"
+                android:layout_marginBottom="@dimen/twentydp"
+                android:background="@drawable/btn_red_back"
+                android:gravity="center"
+                android:padding="@dimen/tendp"
+                android:text="@string/pay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</RelativeLayout>

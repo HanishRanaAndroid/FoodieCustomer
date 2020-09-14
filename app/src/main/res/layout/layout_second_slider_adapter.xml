@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMainLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim100dp"
+        android:layout_marginStart="@dimen/twentydp">
+
+        <com.valle.foodieapp.utils.RoundRectCornerImageView
+            android:id="@+id/ivRestaurantImage"
+            android:layout_width="@dimen/dim150dp"
+            android:layout_height="@dimen/dim100dp"
+            android:background="@drawable/rectangular_with_radius"
+            android:scaleType="fitXY"
+            android:src="@drawable/as" />
+
+        <!--   <androidx.appcompat.widget.AppCompatImageView
+               android:layout_width="80dp"
+               android:layout_height="25dp"
+               android:layout_margin="10dp"
+               android:background="@color/white" />
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:layout_width="100dp"
+               android:layout_height="50dp"
+               android:src="@drawable/exclusive_new" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRestaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvDiscountPercentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fifteensp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/tendp"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/fivedp"
+            android:text="@string/order_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tensp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="@dimen/tendp"
+            android:gravity="start"
+            android:text="@string/order_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tensp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

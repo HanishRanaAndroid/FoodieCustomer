@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ratingStyle" parent="android:Widget.Material.RatingBar.Small" tools:targetApi="lollipop" />
+
+    <style name="ratingStylerating" parent="android:Widget.Material.Light.RatingBar.Indicator" tools:targetApi="lollipop">
+
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/light_black</item>
+        <item name="colorControlActivated">@color/green</item>
+    </style>
+
+    <style name="DialogAnimation_2">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_right</item>
+    </style>
+    <style name="AppTheme.pink" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/foodie_color</item>
+        <item name="colorPrimaryDark">@color/foodie_color</item>
+        <item name="colorAccent">@color/foodie_color</item>
+        <item name="colorButtonNormal">@color/foodie_color</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_pink</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="AlertDialogStyle_pink" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/foodie_color</item>
+        <item name="android:textColorPrimary">@color/foodie_color</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+    </style>
+</resources>

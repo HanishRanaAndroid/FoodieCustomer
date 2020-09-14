@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scRate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.RateOrderFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRestImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="@dimen/fifteendp"
+            android:scaleType="fitXY"
+            android:src="@drawable/demo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/tendp"
+            android:text="@string/rate_your_meal_from"
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRestName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/tendp"
+            android:text="Cambrange Resturant"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/ratingStylerating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/tendp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:paddingTop="@dimen/fivedp"
+            android:paddingBottom="@dimen/fivedp"
+            android:progressTint="@color/green"
+            android:theme="@style/ratingStyle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tendp"
+            android:gravity="center"
+            android:text="@string/feedback"
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim100dp"
+            android:layout_marginLeft="@dimen/dimen_50dp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:layout_marginRight="@dimen/dimen_50dp"
+            android:background="@drawable/rectangular_with_black_borger"
+            android:gravity="start"
+            android:hint="@string/write_here"
+            android:padding="@dimen/tendp"
+            android:text=""
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginTop="@dimen/twentydp"
+            android:layout_marginRight="@dimen/twentydp"
+            android:gravity="center"
+            android:padding="@dimen/tendp"
+            android:text="@string/your_words_makes_valle_food_a_better_place_you_are_the_influence"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim12sp" />
+
+        <Button
+            android:id="@+id/btSubmitRating"
+            android:layout_width="@dimen/dim200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/thirtydp"
+            android:background="@color/foodie_color"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

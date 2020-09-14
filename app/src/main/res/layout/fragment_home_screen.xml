@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMainHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creme_white"
+    tools:context=".fragment.HomeScreenFragment">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        shimmer:duration="800">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/data_layout_upper_placeholder" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_containerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shimmer_view_container"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        shimmer:duration="800">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/data_placeholder_layout" />
+
+            <include layout="@layout/data_placeholder_layout" />
+
+            <include layout="@layout/data_placeholder_layout" />
+
+            <include layout="@layout/data_placeholder_layout" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTopSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRecomended"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvTopSlider"
+                    android:layout_marginLeft="@dimen/fifteendp"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/fivedp"
+                    android:text="@string/recomended"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp"
+                    android:visibility="gone" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTopSliderTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim100dp"
+                    android:layout_below="@+id/tvRecomended"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:orientation="horizontal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNoOfResturants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvTopSliderTwo"
+                    android:layout_marginLeft="@dimen/fifteendp"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/fivedp"
+                    android:text="@string/top_rated"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvListData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNoOfResturants"
+                    android:layout_margin="@dimen/tendp"
+                    android:orientation="horizontal" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llHomeView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvListData"
+                    android:layout_margin="@dimen/tendp"
+                    android:orientation="vertical" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llDataNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/not_found" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sorry_we_don_t_have_any_restaurant_in_your_area"
+            android:textSize="@dimen/dim14sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/submit"
+        android:src="@drawable/enquiry"
+        android:tint="@color/white" />
+</RelativeLayout>

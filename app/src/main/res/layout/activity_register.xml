@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMainRegister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver_white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dim150dp"
+                android:layout_height="@dimen/dim120dp"
+                android:src="@mipmap/logo" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:background="@drawable/edit_background"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dim25dp"
+                    android:layout_height="@dimen/dim25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:src="@drawable/columbia" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dim5dp"
+                    android:layout_marginRight="@dimen/dim5dp"
+                    android:text="+57"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim12sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fortydp"
+                    android:background="@null"
+                    android:hint="@string/phone"
+                    android:inputType="number"
+                    android:shadowColor="@color/shadow_color"
+                    android:textColor="@color/foodie_color"
+                    android:textColorHint="@color/foodie_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dim12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:background="@drawable/edit_background"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/fifteendp"
+                    android:layout_height="@dimen/fifteendp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dim5dp"
+                    android:src="@drawable/user_icon"
+                    android:tint="#A6A8A9" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fortydp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/name"
+                    android:shadowColor="@color/shadow_color"
+                    android:textColor="@color/foodie_color"
+                    android:textColorHint="@color/foodie_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dim14sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:background="@drawable/edit_background"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/fifteendp"
+                    android:layout_height="@dimen/fifteendp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dim5dp"
+                    android:src="@drawable/email"
+                    android:tint="#A6A8A9" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fortydp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/email"
+                    android:shadowColor="@color/shadow_color"
+                    android:textColor="@color/foodie_color"
+                    android:textColorHint="@color/foodie_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dim14sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:background="@drawable/edit_background"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/fifteendp"
+                    android:layout_height="@dimen/fifteendp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dim5dp"
+                    android:src="@drawable/key"
+                    android:tint="#A6A8A9" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fortydp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:shadowColor="@color/shadow_color"
+                    android:textColor="@color/foodie_color"
+                    android:textColorHint="@color/foodie_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dim12sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPasswordVisi"
+                    android:layout_width="@dimen/dim25dp"
+                    android:layout_height="@dimen/dim25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dim5dp"
+                    android:src="@drawable/pass_hide"
+                    android:tint="#A6A8A9" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:background="@drawable/edit_background"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/fifteendp"
+                    android:layout_height="@dimen/fifteendp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dim5dp"
+                    android:src="@drawable/key"
+                    android:tint="#A6A8A9" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fortydp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="@string/conf_password"
+                    android:inputType="textPassword"
+                    android:shadowColor="@color/shadow_color"
+                    android:textColor="@color/foodie_color"
+                    android:textColorHint="@color/foodie_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dim12sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivConfPassVisi"
+                    android:layout_width="@dimen/dim25dp"
+                    android:layout_height="@dimen/dim25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dim5dp"
+                    android:src="@drawable/pass_hide"
+                    android:tint="#A6A8A9" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:background="@drawable/btn_red_back"
+                android:gravity="center"
+                android:padding="@dimen/tendp"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim12sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAlreadyHaveAAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/tendp"
+                android:text="@string/already_account"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/dim12sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</RelativeLayout>

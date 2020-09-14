@@ -1,0 +1,376 @@
+<resources>
+    <string name="app_name">Valle Food</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="conf_password">Confirm Password</string>
+    <string name="Terms_conditions"><![CDATA[Term & Conditions]]></string>
+    <string name="forgot_pass">Forget Password?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="social">Connect with social</string>
+    <string name="already_account">Already Have a account? Sign in</string>
+    <string name="skip">Skip</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alert">Alert</string>
+    <string name="r_u_sure_u_want_to_exit">Are you sure? you want to exit.</string>
+    <string name="home">Home</string>
+    <string name="orders">Orders</string>
+    <string name="account">Account</string>
+    <string name="verification_code_send_to_your_mobile_number">Verification code send to your mobile number</string>
+    <string name="verify_otp">VERIFY OTP</string>
+    <string name="don_t_receive_the_code">Don\'t receive the code?</string>
+    <string name="resend">RESEND</string>
+    <string name="style_json">[
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#212121"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#212121"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#181818"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1b1b1b"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#2c2c2c"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8a8a8a"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#373737"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#3c3c3c"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#4e4e4e"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#3d3d3d"
+      }
+    ]
+  }
+]</string>
+    <string name="menu">MENU</string>
+    <string name="add">+ADD</string>
+    <string name="address">Address</string>
+    <string name="house">House/Flat No.</string>
+    <string name="landmark">Landmark</string>
+    <string name="work">Work</string>
+    <string name="other">Other</string>
+    <string name="search">Search</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome_to_foodie">Welcome to Valle Food</string>
+    <string name="discover_new_dishes_everyday_and_hold_your_favourite_restaurant">Discover new dishes everyday and hold your favourite restaurant</string>
+    <string name="add_address">ADD ADDRESS</string>
+    <string name="select_address">SELECT ADDRESS</string>
+    <string name="add_custome_notes">Add Custome Notes</string>
+    <string name="have_any_promocode">Have any promocode?</string>
+    <string name="details">DETAILS</string>
+    <string name="help">HELP</string>
+    <string name="notification_setting">Notification Setting</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="facebook_app_id">483516435600459</string>
+    <string name="fb_login_protocol_scheme">fb483516435600459</string>
+    <string name="we_have_received_your_order">We have received your order</string>
+    <string name="order_confirmed">Order Confirmed</string>
+    <string name="your_order_has_been_confirmed">Your order has been confirmed</string>
+    <string name="order_processed">Order Processed</string>
+    <string name="your_order_getting_cooked">Your order getting cooked</string>
+    <string name="order_pickedup">Order Pickedup</string>
+    <string name="your_order_is_on_its_way">Your order is on its way</string>
+    <string name="chat">CHAT</string>
+    <string name="send">Send</string>
+    <string name="type_message">Type Message</string>
+    <string name="plz_enter_phone_number">Please enter phone number</string>
+    <string name="plz_enter_your_email">Please enter your email</string>
+    <string name="plz_enter_conf_password">Please enter confirm password</string>
+    <string name="password_not_matched">Password not matched</string>
+    <string name="please_enter_your_old_password">Please enter your old password</string>
+    <string name="please_enter_new_password">Please enter new password</string>
+    <string name="please_enter_conf_password">Please enter confirm password</string>
+    <string name="something_went_wrong">Something went wrong. Please try again.</string>
+    <string name="updated_successfully">Updated Successfully</string>
+    <string name="no_order_found">No Order Found</string>
+    <string name="view_cart">View Cart</string>
+    <string name="order_now">Order Now</string>
+    <string name="are_you_sure_to_exit_app">Do you want to exit from app?</string>
+    <string name="exit">Exit!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="plus_taxes">plus taxes</string>
+    <string name="item">ITEM</string>
+    <string name="perm_ness">Permission necessary</string>
+    <string name="location_perm_req">Location Permission is necessary</string>
+    <string name="ok">OK</string>
+    <string name="plz_enter_your_number">Please enter your number</string>
+    <string name="plz_enter_your_password">Please enter your password</string>
+    <string name="plz_enter_otp">Please enter OTP</string>
+    <string name="plz_enter_valid_code">Please enter valid code</string>
+    <string name="plz_allow_loc_per">Please Allow your location</string>
+    <string name="plz_allow_for_best_results">Please allow your location permission. so that we can provide you best results</string>
+    <string name="flat">FLAT</string>
+    <string name="use_code">% USE CODE:</string>
+    <string name="off">% OFF</string>
+    <string name="off_use_code">% OFF- use code</string>
+    <string name="item_added_to_cart_plz_check">Items added to your cart. Please check</string>
+    <string name="plz_enter_your_address">Please enter your address</string>
+    <string name="plz_enter_house_flat_no">Please enter House/Flat No.</string>
+    <string name="plz_enter_landmark">Please enter Landmark</string>
+    <string name="plz_choose_adddress_type">Please choose address type</string>
+    <string name="plz_add_delivery_address">Please Add delivery address</string>
+    <string name="plz_write_your_note">Please write your note</string>
+    <string name="note">Note:</string>
+    <string name="plz_entr_promo">Please enter promocode</string>
+    <string name="to_pay">To Pay     $</string>
+    <string name="plz_enter_valid_copon_code">Please enter valid coupon code</string>
+    <string name="added_succesfully">Added Successfully</string>
+    <string name="plz_wait_assigning_delivery_boy">Please wait.. we are assigning delivery boy</string>
+    <string name="delivery_boy">Delivery Boy</string>
+    <string name="delivery_location">Delivery Location</string>
+    <string name="order_amount">Order Amount: $</string>
+    <string name="oops_something_went_wrong">oops..something went wrong</string>
+    <string name="thanks_for_rating">Thanks for rating</string>
+    <string name="item_added">Item Added</string>
+    <string name="cart_alert">You can only order items from one menu at a time</string>
+    <string name="cart_alert_message">Clear your cart if you\'d still like to order this items</string>
+    <string name="clear_cart_nd_add">CLEAR CART AND ADD</string>
+    <string name="cancel">CANCEL</string>
+    <string name="logout">Logout!</string>
+    <string name="r_u_sure">Are You Sure?</string>
+    <string name="plz_entr_name">Please enter name</string>
+    <string name="plz_entr_email">Please enter email</string>
+    <string name="plz_entr_mob_number">Please enter mobile number</string>
+    <string name="forget_password">FORGET PASSWORD</string>
+    <string name="submit">Submit</string>
+    <string name="reset_your_password">Reset Your Password</string>
+    <string name="repeat_order">Repeat Order</string>
+    <string name="ordered_items">Ordered Items</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="order_on">Order On</string>
+    <string name="total">Total</string>
+    <string name="delivered">Delivered</string>
+    <string name="rate_order">Rate Order</string>
+    <string name="delivered_and_rated">Delivered and rated</string>
+    <string name="order_cancelled">Order Cancelled</string>
+    <string name="track_order"><![CDATA[Track Order ->]]></string>
+    <string name="top_rated">TOP RATED</string>
+    <string name="enter_note">Enter Note</string>
+    <string name="receive_notification">Receive Notification</string>
+    <string name="apply_promocode">Apply Promocode</string>
+    <string name="enter_promo_code">Enter Promo code</string>
+    <string name="item_total">Item Total</string>
+    <string name="delivery_fees">Delivery Fees</string>
+    <string name="service_tax">Service Tax</string>
+    <string name="discount">Discount</string>
+    <string name="remove">Remove -</string>
+    <string name="proceed_to_payment">PROCEED TO PAYMENT</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="save_delivery_location">Save delivery location</string>
+    <string name="location_please_select_location_from_the_map">Location (Please select location from the map)</string>
+    <string name="save">Save</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="location">Location</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="chat_with_delivery_boy">Chat with delivery boy</string>
+    <string name="chat_with_restaurant">Chat with restaurant</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="you_can_check_status_of_your_order_into_order_history">You can check status of your order into order history</string>
+    <string name="pay_on_delivery">PAY ON DELIVERY</string>
+    <string name="by_cash">By Cash</string>
+    <string name="pay_online">PAY ONLINE</string>
+    <string name="pay">Pay</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate_your_meal_from">Rate your meal from</string>
+    <string name="write_here">Write here..</string>
+    <string name="your_words_makes_valle_food_a_better_place_you_are_the_influence">Your words makes Valle Food a better place you are the influence!</string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="featured_products">FEATURED PRODUCTS</string>
+    <string name="change_password">Change Password</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="user_name">User Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="mobile_numbr">Mobile Numbr</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="sorry_we_don_t_have_any_restaurant_in_your_area">Sorry, We don\'t have any restaurant in your area</string>
+    <string name="transaction_failed">Transaction failed</string>
+    <string name="grand_total">Grand Total:</string>
+    <string name="retry_to_pay">Retry to pay</string>
+    <string name="you_cant_go_back">Please cannot go back</string>
+    <string name="internet_error">Internet Connection error!</string>
+    <string name="restry">RETRY</string>
+    <string name="trans_fess">Transaction fees charges are $</string>
+    <string name="plz_chose_payment_type">Please choose your payment type</string>
+    <string name="out_of_stock">Out of stock</string>
+    <string name="order_number">Order Number</string>
+    <string name="wishlist_not_found">Wishlist Not Found</string>
+    <string name="home_add">Home</string>
+    <string name="plz_enter_your_name">Please enter your name</string>
+    <string name="no_query_found">No Query Found</string>
+    <string name="city">City</string>
+    <string name="recomended">Recomended</string>
+    <string name="chaneel_id">com.valle.foodieapp</string>
+    <string name="neighbor">Neighborhood</string>
+</resources>

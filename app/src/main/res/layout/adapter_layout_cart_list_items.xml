@@ -1,0 +1,118 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/tendp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.valle.foodieapp.utils.RoundRectCornerImageView
+                    android:id="@+id/ivItemImage"
+                    android:layout_width="@dimen/dim120dp"
+                    android:layout_height="@dimen/dim80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/as" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fivedp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fivedp">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/foodie_color"
+                        android:textSize="@dimen/dim12sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemFlavor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/dim12sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:text=""
+                        android:textSize="@dimen/tensp"
+                        android:textStyle="bold" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:background="@drawable/btn_red_back"
+                    android:gravity="center|right"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/tendp"
+                    android:paddingRight="@dimen/tendp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMinus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/fivedp"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dim14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="@dimen/fivedp"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dim14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPlus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/fivedp"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dim14sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim1dp"
+                android:layout_marginTop="@dimen/tendp"
+                android:background="@color/dark_grey"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

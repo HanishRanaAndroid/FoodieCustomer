@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMainSearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.SearchFragment">
+
+    <RelativeLayout
+        android:id="@+id/rlSearchList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/searchEngineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tendp"
+            android:background="@drawable/rectangular_with_black_borger"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/thirtydp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/search"
+                android:shadowColor="@color/shadow_color"
+                android:textColor="@color/light_black"
+                android:textColorHint="@color/light_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dim14sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClearText"
+                android:layout_width="@dimen/twentydp"
+                android:layout_height="@dimen/twentydp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginRight="@dimen/fivedp"
+                android:src="@drawable/clear_text"
+                android:visibility="gone" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearchListData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchEngineLayout"
+            android:layout_margin="@dimen/tendp" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llDataNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/not_found" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sorry_we_don_t_have_any_restaurant_in_your_area"
+            android:textSize="@dimen/dim14sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
