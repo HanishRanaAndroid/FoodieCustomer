@@ -594,6 +594,7 @@ public class CartFragment extends BaseFragment implements SelectAddressInterface
             jsonObject.put("Items", jsonArray);
 
             JSONObject addressJson = new JSONObject();
+
             if (itemsData != null) {
                 addressJson.put("Map_Address", itemsData.Address1);
                 addressJson.put("Address", itemsData.Address2);
