@@ -40,6 +40,9 @@ public class Apis {
     public static final String ADMIN_CONTACT = "api/v1/AdminContact";
     public static final String SUBMIT_TICKET = "api/v1/SubmitTicketRequest";
     public static final String LIST_TICKET = "api/v1/ListTicketRequest";
+    public static final String CUSTOMER_SUPPORT_NUMBER = "api/v1/CustomerSupportNumber";
+    public static final String USER_TOKEN = "api/v1/UpdateUserData";
+
     /*https://maps.googleapis.com/maps/api/distancematrix/json?origins=30.7046,76.7179&destinations=30.7333,76.7794&mode=walking&language=fr-FR&key=AIzaSyC83PRh2UJcGKBoa2Y9MhKZK6v6mwTDTOs*/
 }
 /*https://api.exchangeratesapi.io/latest?base=EUR*/

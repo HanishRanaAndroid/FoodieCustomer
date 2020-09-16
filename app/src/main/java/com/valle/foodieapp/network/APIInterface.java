@@ -22,10 +22,18 @@ public interface APIInterface {
     @GET(Apis.HOME_PAGE)
     Observable<String> getHomePageData();
 
+    @GET(Apis.CUSTOMER_SUPPORT_NUMBER)
+    Observable<String> getCustomerSupportNumber();
+
     @Headers("apitoken: 813937bae1a26e2d442acec31c85c460e0a12c98")
     @POST(Apis.REGISTER)
     @FormUrlEncoded
     Observable<String> register(@Field("Full_Name") String Full_Name, @Field("Mobile") String Mobile, @Field("Email") String Email, @Field("Password") String Password, @Field("Device_Token") String Device_Token, @Field("Role") String Role);
+
+    @Headers("apitoken: 813937bae1a26e2d442acec31c85c460e0a12c98")
+    @POST(Apis.USER_TOKEN)
+    @FormUrlEncoded
+    Observable<String> updateUserPresence(@Field("Where") String Where, @Field("Data") String Data);
 
     @Headers("apitoken: 813937bae1a26e2d442acec31c85c460e0a12c98")
     @POST(Apis.LOGIN)
