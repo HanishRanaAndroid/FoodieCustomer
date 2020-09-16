@@ -144,7 +144,7 @@ public class HomeTabActivity extends BaseActivity implements View.OnClickListene
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                runOnUiThread(() -> {
+           git     runOnUiThread(() -> {
                     Fragment fr = fragmentManager.findFragmentById(R.id.frame_layout);
                     if (fr instanceof HomeScreenFragment || fr instanceof SearchFragment) {
                         callCartApi();
