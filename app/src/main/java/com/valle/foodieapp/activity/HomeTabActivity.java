@@ -57,6 +57,7 @@ import com.payumoney.core.entity.TransactionResponse;
 import com.payumoney.sdkui.ui.utils.PayUmoneyFlowManager;
 import com.payumoney.sdkui.ui.utils.ResultModel;
 import com.valle.foodieapp.utils.GPSTracker;
+import com.valle.foodieapp.utils.DeviceTokenHandlerService;
 
 import org.json.JSONObject;
 
@@ -137,6 +138,14 @@ public class HomeTabActivity extends BaseActivity implements View.OnClickListene
     @Override
     protected void onResume() {
         super.onResume();
+
+        try {
+            if (!CommonUtils.isMyServiceRunning(HomeTabActivity.this, DeviceTokenHandlerService.class)) {
+                startService(new Intent(this, DeviceTokenHandlerService.class));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         timer = new Timer();
         headertimer = new Timer();
