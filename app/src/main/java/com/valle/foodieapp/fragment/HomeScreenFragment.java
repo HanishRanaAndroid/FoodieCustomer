@@ -128,7 +128,8 @@ public class HomeScreenFragment extends BaseFragment implements LocationListener
 
             boolean isWhatsappInstalled = CommonUtils.whatsappInstalledOrNot("com.whatsapp", getActivity());
             if (isWhatsappInstalled) {
-                Uri uri = Uri.parse("smsto:" + "3156478939");
+                String customerSupportNumber = new SharedPrefModule(getActivity()).getCustomerSupportNumber();
+                Uri uri = Uri.parse("smsto:" + customerSupportNumber);
                 Intent sendIntent = new Intent(Intent.ACTION_SENDTO, uri);
                 sendIntent.setPackage("com.whatsapp");
                 startActivity(sendIntent);
@@ -164,6 +165,8 @@ public class HomeScreenFragment extends BaseFragment implements LocationListener
             showSnakBar();
             return;
         }
+
+       makeHttpCall(this,Apis.CUSTOMER_SUPPORT_NUMBER,getRetrofitInterface().getCustomerSupportNumber());
 
         String locationLattitude = new SharedPrefModule(getActivity()).getLocationLattitude();
         String locationLongitude = new SharedPrefModule(getActivity()).getLocationLongitude();
@@ -279,6 +282,24 @@ public class HomeScreenFragment extends BaseFragment implements LocationListener
                         Toast.makeText(getActivity(), getResources().getString(R.string.something_went_wrong), Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+                break;
+
+            case Apis.CUSTOMER_SUPPORT_NUMBER:
+
+                try {
+
+                    if (TextUtils.isEmpty(responce)){
+                        return;
+                    }
+
+                    JSONObject jsonObject=new JSONObject(responce);
+                    String customerSupportNumber = jsonObject.getString("Contact_Number");
+                    new SharedPrefModule(getActivity()).setCustomerSupportNumber(customerSupportNumber);
+
+                }catch (Exception e){
                     e.printStackTrace();
                 }
 

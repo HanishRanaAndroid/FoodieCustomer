@@ -61,6 +61,14 @@ public class SharedPrefModule {
         prefs.edit().putString("notification", notification).commit();
     }
 
+    public void setCustomerSupportNumber(String number){
+        prefs.edit().putString("CustomerSupportNumber", number).commit();
+    }
+
+    public String getCustomerSupportNumber() {
+        return prefs.getString("CustomerSupportNumber", "");
+    }
+
     public String getlocationAddress() {
         return prefs.getString("location", "");
     }

@@ -22,6 +22,9 @@ public interface APIInterface {
     @GET(Apis.HOME_PAGE)
     Observable<String> getHomePageData();
 
+    @GET(Apis.CUSTOMER_SUPPORT_NUMBER)
+    Observable<String> getCustomerSupportNumber();
+
     @Headers("apitoken: 813937bae1a26e2d442acec31c85c460e0a12c98")
     @POST(Apis.REGISTER)
     @FormUrlEncoded

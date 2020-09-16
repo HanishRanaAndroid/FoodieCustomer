@@ -258,7 +258,7 @@ public class ResturantFragment extends BaseFragment implements NetworkResponceLi
 
         tvRestDiscountPercentage.setText(!TextUtils.isEmpty(responseList.Discount_Percentage) ? "Descuento del " + responseList.Discount_Percentage + "%" : "");
         tvRestName.setText(responseList.Restaurant_Name);
-        tvPercentageOff.setText(!TextUtils.isEmpty(responseList.Discount_Percentage) ? "Flat " + responseList.Discount_Percentage + "% OFF" : "");
+        tvPercentageOff.setText(!TextUtils.isEmpty(responseList.Discount_Percentage) ? "Descuento " + responseList.Discount_Percentage + "%" : "");
         tvRestRating.setText(!TextUtils.isEmpty(responseList.Overall_Rating) ? "★" + responseList.Overall_Rating : "");
         tvOrderTime.setText(!TextUtils.isEmpty(responseList.Order_WithIN) ? responseList.Order_WithIN + " mins" : "30 mins");
         try {
