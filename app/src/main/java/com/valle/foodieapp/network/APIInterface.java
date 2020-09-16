@@ -21,7 +21,7 @@ public interface APIInterface {
 
     @GET(Apis.HOME_PAGE)
     Observable<String> getHomePageData();
-
+//
     @GET(Apis.CUSTOMER_SUPPORT_NUMBER)
     Observable<String> getCustomerSupportNumber();
 
